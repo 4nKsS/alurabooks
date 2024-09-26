@@ -1,0 +1,105 @@
+.banner {
+    background: var(--azul-degrade);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1em;
+    font-family: var(--fonte-principal);
+}
+
+.banner__texto {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 1em;
+    color: var(--cor-branca);
+}
+
+.banner__pesquisa {
+    border-radius: 1.5em;
+    background-color: transparent;
+    border: 1px solid var(--cor-branca);
+    color: var(--cor-branca);
+    padding: 1em;
+    width: 100%;
+}
+
+.banner__pesquisa::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+    text-align: center;
+    background: url(../img/Lupa.svg)no-repeat;
+    background-position: 1em;
+}
+
+.bannerend__titulo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--cor-branca);
+    padding: 0 0 2em 0;
+}
+
+.bannerend__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bannerend__item {
+    background-color: var(--laranja);
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 5em;
+    }
+
+    .bannerend__titulo {
+        font-size: 24px;
+    }
+
+    .bannerend__item {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .banner__pesquisa {
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 10em;
+    }
+
+    .banner {
+        padding: 6em 0;
+    }
+
+    .bannerend__lista {
+        padding: 1em 30vw;
+    }
+}
